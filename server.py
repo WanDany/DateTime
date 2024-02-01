@@ -66,4 +66,4 @@ def index():
     return render_template('index.html', location_and_time_worldtimeserver=translated_location_and_time_worldtimeserver, date_timeanddate=translated_date_timeanddate)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host="0.0.0.0")
